@@ -17,3 +17,4 @@ How to Use SSH atleast for Windows : `important note : run on bash using "bash" 
 10. add ur SSH key that u already copied 
 11. congratsss
 12. any git command are the same 
+13. if you dealing with error of origin already exist change the `origin` to `github` or delete current origin using `git remote rm origin`
