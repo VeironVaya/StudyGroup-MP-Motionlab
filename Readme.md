@@ -1,0 +1,1 @@
+This Repository is all about motion study group week-2
