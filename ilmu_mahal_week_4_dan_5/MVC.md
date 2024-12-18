@@ -18,7 +18,6 @@ MVC (Model-View-Controller) is a design pattern that separates an application in
 4. [Advantages of MVC](#4-advantages-of-mvc)
 5. [Implementing MVC in Flutter](#5-implementing-mvc-in-flutter)
 6. [Example of MVC in Flutter](#6-example-of-mvc-in-flutter)
-7. [Conclusion](#7-conclusion)
 
 ---
 
@@ -98,3 +97,77 @@ class CounterModel {
     _count++;
   }
 }
+```
+
+### **Controller**
+```dart
+class CounterController {
+  final CounterModel _model;
+
+  CounterController(this._model);
+
+  int get count => _model.count;
+
+  void increment() {
+    _model.increment();
+  }
+}
+```
+### **View**
+```dart
+import 'package:flutter/material.dart';
+import 'counter_controller.dart';
+import 'counter_model.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: CounterView(),
+    );
+  }
+}
+
+class CounterView extends StatefulWidget {
+  @override
+  _CounterViewState createState() => _CounterViewState();
+}
+
+class _CounterViewState extends State<CounterView> {
+  final CounterModel _model = CounterModel();
+  late final CounterController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = CounterController(_model);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("MVC Counter Example")),
+      body: Center(
+        child: Text(
+          "Count: ${_controller.count}",
+          style: TextStyle(fontSize: 24),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            _controller.increment();
+          });
+        },
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+```
+
+
