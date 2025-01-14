@@ -1,1 +1,1 @@
-This branch is all about week 4 and 5 `state management and MVC`
+This branch is all about week 5 `GetX`
