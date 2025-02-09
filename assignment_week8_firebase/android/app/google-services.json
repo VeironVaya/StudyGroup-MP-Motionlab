@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150381460803",
+    "project_id": "week8motion",
+    "storage_bucket": "week8motion.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150381460803:android:bee2f3c9641271cca2c3f6",
+        "android_client_info": {
+          "package_name": "com.example.assignment_week2_slicing_ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFFpzwK6fbp3MVHODpr7vft2yCBcuFIuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
