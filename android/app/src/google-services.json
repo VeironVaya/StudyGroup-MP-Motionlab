@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "413768131158",
+    "project_id": "appnguliks",
+    "storage_bucket": "appnguliks.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413768131158:android:8db91af3492cb88a8291f7",
+        "android_client_info": {
+          "package_name": "com.example.tubes_nguliks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413768131158-j6md5r1oonhu74ou8dpifcgcr3mgm4h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tubes_nguliks",
+            "certificate_hash": "d540e615234975f2acc66afb8b9bf7fe97a005cd"
+          }
+        },
+        {
+          "client_id": "413768131158-guv6mq37ou1kd10bn2e5mu5uqpceo75i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc2BUpbZ6X1q5RDzkHlz9PxzmWTRiEGb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413768131158-guv6mq37ou1kd10bn2e5mu5uqpceo75i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "413768131158-i3s972o2c2ocucj6mv0pleb7sg32vloh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tubesNguliks"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
